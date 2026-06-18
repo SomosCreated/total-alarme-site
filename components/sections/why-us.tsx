@@ -1,5 +1,6 @@
 import { Award, HeartHandshake, Bike, Wrench, Cpu, Users, type LucideIcon } from "lucide-react";
 import { Section } from "@/components/ui/section";
+import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
 import { whyUs } from "@/content/site";
 
@@ -21,13 +22,13 @@ export function WhyUs() {
           const Icon = icons[d.icon] ?? Award;
           return (
             <Reveal key={d.title}>
-              <div className="h-full rounded-3xl border border-border bg-card p-7">
+              <Card className="h-full">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand/10 text-brand">
                   <Icon className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <h3 className="mt-5 text-lg font-bold">{d.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{d.description}</p>
-              </div>
+              </Card>
             </Reveal>
           );
         })}

@@ -1,8 +1,18 @@
-import { Share2, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/ui/logo";
 import { nav, footer } from "@/content/site";
 import { siteConfig } from "@/lib/site-config";
+
+function InstagramIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
 
 export function Footer() {
   const year = 2026;
@@ -31,7 +41,7 @@ export function Footer() {
               <li className="flex items-center gap-2"><Mail className="h-4 w-4" aria-hidden="true" /> {siteConfig.email}</li>
               <li>
                 <a href={siteConfig.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 transition hover:text-white">
-                  <Share2 className="h-4 w-4" aria-hidden="true" /> Instagram
+                  <InstagramIcon className="h-4 w-4" /> Instagram
                 </a>
               </li>
             </ul>
