@@ -1,3 +1,5 @@
+"use client";
+
 import { MessageCircle } from "lucide-react";
 import { whatsappUrl } from "@/lib/links";
 import { trackWhatsApp } from "@/lib/analytics";

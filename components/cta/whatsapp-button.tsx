@@ -1,3 +1,5 @@
+"use client";
+
 import type { ReactNode } from "react";
 import { MessageCircle } from "lucide-react";
 import { whatsappUrl } from "@/lib/links";
