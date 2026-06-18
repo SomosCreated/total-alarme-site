@@ -2,23 +2,16 @@
 
 import { useEffect, useState } from "react";
 
-type Gtag = (...args: unknown[]) => void;
-
 function updateConsent(granted: boolean) {
   const value = granted ? "granted" : "denied";
-  const params = {
+  const w = window as unknown as { dataLayer?: unknown[] };
+  w.dataLayer = w.dataLayer ?? [];
+  w.dataLayer.push(["consent", "update", {
     ad_storage: value,
     ad_user_data: value,
     ad_personalization: value,
     analytics_storage: value,
-  };
-  const w = window as unknown as { gtag?: Gtag; dataLayer?: unknown[] };
-  if (typeof w.gtag === "function") {
-    w.gtag("consent", "update", params);
-  } else {
-    w.dataLayer = w.dataLayer ?? [];
-    w.dataLayer.push({ event: "consent_update", ...params });
-  }
+  }]);
 }
 
 export function ConsentBanner() {

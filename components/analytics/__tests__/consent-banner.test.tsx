@@ -20,4 +20,15 @@ describe("ConsentBanner", () => {
     render(<ConsentBanner />);
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
   });
+  it("ao aceitar, empurra o consent update granted (formato arguments) no dataLayer", async () => {
+    const user = userEvent.setup();
+    render(<ConsentBanner />);
+    await user.click(screen.getByRole("button", { name: /aceitar/i }));
+    const dl = (window as unknown as { dataLayer: unknown[] }).dataLayer;
+    expect(dl).toContainEqual([
+      "consent",
+      "update",
+      { ad_storage: "granted", ad_user_data: "granted", ad_personalization: "granted", analytics_storage: "granted" },
+    ]);
+  });
 });
