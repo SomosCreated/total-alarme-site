@@ -5,7 +5,7 @@ export function LocalBusinessJsonLd() {
     "@context": "https://schema.org",
     "@type": "SecuritySystemService",
     name: "Total Alarme",
-    image: `${siteConfig.siteUrl}/og.png`,
+    image: `${siteConfig.siteUrl}/opengraph-image`,
     url: siteConfig.siteUrl,
     telephone: siteConfig.phone,
     email: siteConfig.email,

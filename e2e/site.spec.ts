@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Total Alarme — home", () => {
+test.describe("Total Alarme - home", () => {
   test("renderiza seções-chave e CTAs", async ({ page }) => {
     await page.goto("/");
     await expect(page.getByRole("heading", { level: 1 })).toContainText(/segurança/i);

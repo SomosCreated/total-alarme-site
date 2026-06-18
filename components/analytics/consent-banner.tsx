@@ -19,6 +19,7 @@ export function ConsentBanner() {
 
   useEffect(() => {
     try {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- read persisted consent on mount
       if (!localStorage.getItem("ta-consent")) setVisible(true);
     } catch {
       setVisible(true);

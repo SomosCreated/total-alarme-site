@@ -2,6 +2,7 @@ import Script from "next/script";
 
 export function ConsentInit() {
   return (
+    // eslint-disable-next-line @next/next/no-before-interactive-script-outside-document -- App Router: hoists before GTM
     <Script id="consent-init" strategy="beforeInteractive">
       {`
         window.dataLayer = window.dataLayer || [];
