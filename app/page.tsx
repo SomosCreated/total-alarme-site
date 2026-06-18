@@ -6,6 +6,7 @@ import { Services } from "@/components/sections/services";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { WhyUs } from "@/components/sections/why-us";
 import { Values } from "@/components/sections/values";
+import { Faq } from "@/components/sections/faq";
 import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
 import { FloatingWhatsApp } from "@/components/cta/floating-whatsapp";
@@ -23,6 +24,7 @@ export default function Home() {
         <HowItWorks />
         <WhyUs />
         <Values />
+        <Faq />
         <Contact />
       </main>
       <Footer />

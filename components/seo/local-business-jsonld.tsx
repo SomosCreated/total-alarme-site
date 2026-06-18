@@ -5,11 +5,22 @@ export function LocalBusinessJsonLd() {
     "@context": "https://schema.org",
     "@type": "SecuritySystemService",
     name: "Total Alarme",
+    description:
+      "Monitoramento de alarmes 24 horas, atendimento tático presencial e assistência técnica em Barra Velha e litoral norte de Santa Catarina.",
+    slogan: "Monitoramos. Protegemos. Cuidamos.",
     image: `${siteConfig.siteUrl}/opengraph-image`,
     url: siteConfig.siteUrl,
     telephone: siteConfig.phone,
     email: siteConfig.email,
+    priceRange: "$$",
     areaServed: siteConfig.cities.map((c) => ({ "@type": "City", name: c })),
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Barra Velha",
+      addressRegion: "SC",
+      addressCountry: "BR",
+    },
+    sameAs: [siteConfig.instagram],
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],

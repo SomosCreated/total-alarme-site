@@ -17,19 +17,19 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "Total Alarme | Monitoramento de alarmes 24h em Barra Velha e região",
+    default: "Monitoramento de Alarmes 24h em Barra Velha | Total Alarme",
     template: "%s | Total Alarme",
   },
   description:
-    "Monitoramento de alarmes 24 horas, atendimento tático presencial e assistência técnica própria. A tradição da Tele Alarme, agora Total Alarme.",
+    "Monitoramento de alarmes 24 horas, atendimento tático no local e assistência técnica própria em Barra Velha e litoral. Fale com a Total Alarme.",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: siteConfig.siteUrl,
     siteName: "Total Alarme",
-    title: "Total Alarme | Monitoramento de alarmes 24h",
+    title: "Monitoramento de Alarmes 24h em Barra Velha | Total Alarme",
     description:
-      "Monitoramento 24h, atendimento tático presencial e assistência técnica própria na sua região.",
+      "Monitoramento de alarmes 24h, atendimento tático no local e assistência técnica própria em Barra Velha e litoral norte de SC.",
   },
   alternates: { canonical: siteConfig.siteUrl },
 };

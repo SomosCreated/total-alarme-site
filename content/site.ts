@@ -14,15 +14,16 @@ export const nav = {
     { href: "#servicos", label: "Serviços" },
     { href: "#como-funciona", label: "Como funciona" },
     { href: "#quem-somos", label: "Quem somos" },
+    { href: "#faq", label: "Dúvidas" },
     { href: "#contato", label: "Contato" },
   ],
 };
 
 export const hero = {
-  badge: "A continuidade da Tele Alarme",
+  badge: "Equipe com décadas de experiência",
   title: "Sua segurança merece presença quando realmente importa.",
   subtitle:
-    "Monitoramento 24 horas, atendimento tático presencial e assistência técnica especializada por uma equipe que conhece o mercado de segurança da nossa região há décadas.",
+    "Monitoramento de alarmes 24 horas, atendimento tático no local e assistência técnica própria em Barra Velha e litoral, por uma equipe que conhece a segurança da região há décadas.",
   chips: ["24 horas por dia", "Atendimento tático", "Assistência própria"],
 };
 
@@ -37,8 +38,8 @@ export const about = {
   title: "Quem somos",
   lead: "A tradição da segurança, preparada para o futuro.",
   paragraphs: [
-    "A Total Alarme é uma empresa de monitoramento eletrônico criada por profissionais que dedicaram grande parte de suas vidas à segurança eletrônica.",
-    "Fazem parte deste projeto colaboradores que ajudaram a construir uma trajetória de confiança no mercado regional, incluindo o filho do fundador da antiga Tele Alarme e diversos profissionais que fizeram parte daquela história.",
+    "A Total Alarme é uma empresa de monitoramento eletrônico criada por profissionais que dedicaram boa parte da vida à segurança eletrônica na nossa região.",
+    "Reunimos uma equipe com décadas de atuação em monitoramento de alarmes, reconhecida pelo compromisso, pela responsabilidade e pela dedicação ao cliente.",
     "Somos uma empresa familiar que acredita que tecnologia é importante, mas que nada substitui o atendimento humano quando o cliente realmente precisa.",
   ],
 };
@@ -137,3 +138,12 @@ export const footer = {
 
 export const whatsappDefaultMessage =
   "Olá! Gostaria de saber mais sobre o monitoramento da Total Alarme.";
+
+export const faq: FaqItem[] = [
+  { q: "A Total Alarme atende a minha cidade?", a: "Atendemos Barra Velha, Piçarras, São João do Itaperiú e região do litoral norte de Santa Catarina, com monitoramento 24 horas e atendimento no local." },
+  { q: "O que é o atendimento tático presencial?", a: "Quando o alarme dispara e a ocorrência exige presença física, nossa equipe vai até o endereço verificar a situação e dar apoio, em vez de só registrar o evento à distância." },
+  { q: "Como funciona o monitoramento 24 horas?", a: "Seu sistema envia os eventos para a nossa central, que acompanha tudo 24 horas por dia. Diante de uma ocorrência, acionamos os responsáveis e, quando necessário, a equipe vai ao local." },
+  { q: "Vocês fazem monitoramento residencial e comercial?", a: "Sim. Atendemos residências e empresas de pequeno porte, com soluções adequadas a cada tipo de imóvel." },
+  { q: "Preciso trocar meu sistema de alarme atual?", a: "Na maioria dos casos, não. Avaliamos o seu sistema e indicamos a melhor forma de integrá-lo à nossa central. Solicite uma visita e a gente te orienta." },
+  { q: "Como faço para contratar?", a: "Fale com a gente pelo WhatsApp ou telefone. Agendamos uma visita, avaliamos o local e apresentamos a solução de monitoramento ideal para você." },
+];
