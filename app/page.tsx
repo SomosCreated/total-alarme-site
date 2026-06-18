@@ -5,6 +5,7 @@ import { About } from "@/components/sections/about";
 import { Services } from "@/components/sections/services";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { WhyUs } from "@/components/sections/why-us";
+import { NightBand } from "@/components/sections/night-band";
 import { Values } from "@/components/sections/values";
 import { Faq } from "@/components/sections/faq";
 import { Contact } from "@/components/sections/contact";
@@ -23,6 +24,7 @@ export default function Home() {
         <Services />
         <HowItWorks />
         <WhyUs />
+        <NightBand />
         <Values />
         <Faq />
         <Contact />

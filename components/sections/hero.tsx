@@ -1,6 +1,7 @@
 import { Clock, Bike, Wrench, Phone, ShieldCheck, Bell } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { WhatsAppButton } from "@/components/cta/whatsapp-button";
+import { BrandWatermark } from "@/components/ui/brand-motif";
 import { telHref } from "@/lib/links";
 import { hero } from "@/content/site";
 import { siteConfig } from "@/lib/site-config";
@@ -10,8 +11,9 @@ const chipIcons = [Clock, Bike, Wrench];
 export function Hero() {
   return (
     <Container className="pt-6">
-      <div className="overflow-hidden rounded-[2.5rem] bg-brand p-8 md:p-14">
-        <div className="grid items-center gap-10 md:grid-cols-[1.25fr_minmax(0,1fr)]">
+      <div className="relative overflow-hidden rounded-[2.5rem] bg-brand p-8 md:p-14">
+        <BrandWatermark className="pointer-events-none absolute -right-10 -top-12 h-72 w-72 text-white opacity-[0.07]" />
+        <div className="relative grid items-center gap-10 md:grid-cols-[1.25fr_minmax(0,1fr)]">
           <div>
             <span className="mb-5 inline-flex items-center gap-2 rounded-full bg-black/20 px-3.5 py-1.5 text-xs font-medium text-white">
               <ShieldCheck className="h-3.5 w-3.5" aria-hidden="true" />

@@ -2,6 +2,7 @@ import { Award, HeartHandshake, Bike, Wrench, Cpu, Users, type LucideIcon } from
 import { Section } from "@/components/ui/section";
 import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
+import { BrandArcPattern } from "@/components/ui/brand-motif";
 import { whyUs } from "@/content/site";
 
 const icons: Record<string, LucideIcon> = {
@@ -10,28 +11,31 @@ const icons: Record<string, LucideIcon> = {
 
 export function WhyUs() {
   return (
-    <Section id="por-que" className="bg-surface/50">
-      <div className="mb-12 max-w-2xl">
-        <p className="text-sm font-medium uppercase tracking-wider text-brand">Por que a Total Alarme</p>
-        <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-          Tradição que cuida, tecnologia que protege.
-        </h2>
-      </div>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {whyUs.map((d) => {
-          const Icon = icons[d.icon] ?? Award;
-          return (
-            <Reveal key={d.title}>
-              <Card className="h-full">
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand/10 text-brand">
-                  <Icon className="h-5 w-5" aria-hidden="true" />
-                </span>
-                <h3 className="mt-5 text-lg font-bold">{d.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{d.description}</p>
-              </Card>
-            </Reveal>
-          );
-        })}
+    <Section id="por-que" className="relative overflow-hidden bg-surface/50">
+      <BrandArcPattern id="arcs-porque" className="pointer-events-none absolute inset-0 text-brand opacity-[0.04]" />
+      <div className="relative">
+        <div className="mb-12 max-w-2xl">
+          <p className="text-sm font-medium uppercase tracking-wider text-brand">Por que a Total Alarme</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
+            Tradição que cuida, tecnologia que protege.
+          </h2>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {whyUs.map((d) => {
+            const Icon = icons[d.icon] ?? Award;
+            return (
+              <Reveal key={d.title}>
+                <Card className="h-full">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-brand/10 text-brand">
+                    <Icon className="h-5 w-5" aria-hidden="true" />
+                  </span>
+                  <h3 className="mt-5 text-lg font-bold">{d.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted">{d.description}</p>
+                </Card>
+              </Reveal>
+            );
+          })}
+        </div>
       </div>
     </Section>
   );

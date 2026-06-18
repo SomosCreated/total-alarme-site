@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Section } from "@/components/ui/section";
 import { Reveal } from "@/components/ui/reveal";
 import { howItWorks } from "@/content/site";
@@ -5,11 +6,25 @@ import { howItWorks } from "@/content/site";
 export function HowItWorks() {
   return (
     <Section id="como-funciona">
-      <div className="mb-12 max-w-2xl">
-        <p className="text-sm font-medium uppercase tracking-wider text-brand">Como funciona</p>
-        <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
-          Do disparo à resolução, com presença de verdade.
-        </h2>
+      <div className="mb-12 grid gap-10 md:grid-cols-2 md:items-center">
+        <div>
+          <p className="text-sm font-medium uppercase tracking-wider text-brand">Como funciona</p>
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight md:text-4xl">
+            Do disparo à resolução, com presença de verdade.
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted">
+            Da nossa central ao seu endereço, acompanhamos cada ocorrência de perto, 24 horas por dia.
+          </p>
+        </div>
+        <div className="overflow-hidden rounded-[2rem] border border-border">
+          <Image
+            src="/images/monitoring.jpg"
+            alt="Central de monitoramento da Total Alarme acompanhando ocorrências 24 horas"
+            width={1600}
+            height={1067}
+            className="h-full w-full object-cover"
+          />
+        </div>
       </div>
       <div className="grid gap-6 md:grid-cols-4">
         {howItWorks.map((step, i) => (

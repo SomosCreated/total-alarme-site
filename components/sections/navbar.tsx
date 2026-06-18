@@ -16,29 +16,31 @@ export function Navbar() {
         <a href="#topo" aria-label="Início">
           <Logo />
         </a>
-        <nav className="hidden items-center gap-8 text-sm font-medium text-muted md:flex">
-          {nav.links.map((l) => (
-            <a key={l.href} href={l.href} className="transition hover:text-fg">
-              {l.label}
-            </a>
-          ))}
-        </nav>
-        <div className="flex items-center gap-3">
-          <ThemeToggle />
-          <div className="hidden md:block">
-            <WhatsAppButton origin="navbar" variant="primary" className="px-5 py-2.5">
-              WhatsApp
-            </WhatsAppButton>
+        <div className="flex items-center gap-6 lg:gap-8">
+          <nav className="hidden items-center gap-6 text-sm font-medium text-muted md:flex lg:gap-7">
+            {nav.links.map((l) => (
+              <a key={l.href} href={l.href} className="transition hover:text-fg">
+                {l.label}
+              </a>
+            ))}
+          </nav>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <div className="hidden md:block">
+              <WhatsAppButton origin="navbar" variant="primary" className="px-5 py-2.5">
+                WhatsApp
+              </WhatsAppButton>
+            </div>
+            <button
+              type="button"
+              aria-label="Abrir menu"
+              aria-expanded={open}
+              onClick={() => setOpen((v) => !v)}
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border md:hidden"
+            >
+              {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+            </button>
           </div>
-          <button
-            type="button"
-            aria-label="Abrir menu"
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-border md:hidden"
-          >
-            {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-          </button>
         </div>
       </Container>
       {open ? (
