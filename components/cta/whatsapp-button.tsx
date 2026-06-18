@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/whatsapp-icon";
 import { whatsappUrl } from "@/lib/links";
 import { trackWhatsApp } from "@/lib/analytics";
 
@@ -34,7 +34,7 @@ export function WhatsAppButton({
       onClick={() => trackWhatsApp(origin)}
       className={`inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition ${styles[variant]} ${className}`}
     >
-      <MessageCircle className="h-4 w-4" aria-hidden="true" />
+      <WhatsAppIcon className="h-4 w-4" />
       {children}
     </a>
   );

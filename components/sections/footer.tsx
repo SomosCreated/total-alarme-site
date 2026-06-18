@@ -47,8 +47,19 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between gap-3 pt-8 text-sm text-white/50 sm:flex-row">
+        <div className="flex flex-col items-center gap-3 pt-8 text-sm text-white/50 sm:flex-row sm:justify-between">
           <p>© {year} Total Alarme. {footer.cnpj}.</p>
+          <p>
+            desenvolvido por{" "}
+            <a
+              href="https://www.created.com.br/?utm_source=totalalerme&utm_medium=footer&utm_campaign=developed_by"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-white/80 transition hover:text-white"
+            >
+              Created
+            </a>
+          </p>
           <a href="/privacidade" className="transition hover:text-white">Política de Privacidade</a>
         </div>
       </Container>
