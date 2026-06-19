@@ -140,7 +140,7 @@ export const whatsappDefaultMessage =
   "Olá! Gostaria de saber mais sobre o monitoramento da Total Alarme.";
 
 export const faq: FaqItem[] = [
-  { q: "A Total Alarme atende a minha cidade?", a: "Atendemos Barra Velha, Piçarras, São João do Itaperiú e região do litoral norte de Santa Catarina, com monitoramento 24 horas e atendimento no local." },
+  { q: "A Total Alarme atende a minha cidade?", a: "Atendemos Balneário Piçarras, Barra Velha, Penha e região do litoral norte de Santa Catarina, com monitoramento 24 horas e atendimento no local." },
   { q: "O que é o atendimento tático presencial?", a: "Quando o alarme dispara e a ocorrência exige presença física, nossa equipe vai até o endereço verificar a situação e dar apoio, em vez de só registrar o evento à distância." },
   { q: "Como funciona o monitoramento 24 horas?", a: "Seu sistema envia os eventos para a nossa central, que acompanha tudo 24 horas por dia. Diante de uma ocorrência, acionamos os responsáveis e, quando necessário, a equipe vai ao local." },
   { q: "Vocês fazem monitoramento residencial e comercial?", a: "Sim. Atendemos residências e empresas de pequeno porte, com soluções adequadas a cada tipo de imóvel." },

@@ -6,6 +6,6 @@ export const siteConfig = {
   email: "total@totalalarme.com.br",
   gtmId: process.env.NEXT_PUBLIC_GTM_ID ?? "",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://totalalarme.com.br",
-  cities: ["Barra Velha", "Piçarras", "São João do Itaperiú"],
+  cities: ["Balneário Piçarras", "Barra Velha", "Penha"],
   instagram: "https://instagram.com/totalalarme",
 } as const;
