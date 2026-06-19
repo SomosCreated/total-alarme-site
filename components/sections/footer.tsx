@@ -50,14 +50,14 @@ export function Footer() {
         <div className="flex flex-col items-center gap-3 pt-8 text-sm text-white/50 sm:flex-row sm:justify-between">
           <p>© {year} Total Alarme. {footer.cnpj}.</p>
           <p>
-            desenvolvido por{" "}
+            Desenvolvido por{" "}
             <a
               href="https://www.created.com.br/?utm_source=totalalerme&utm_medium=footer&utm_campaign=developed_by"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-white/80 transition hover:text-white"
             >
-              Created
+              CREATED
             </a>
           </p>
           <a href="/privacidade" className="transition hover:text-white">Política de Privacidade</a>
