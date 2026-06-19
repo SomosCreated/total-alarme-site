@@ -29,14 +29,14 @@ export function HowItWorks() {
       <div className="grid gap-6 md:grid-cols-4">
         {howItWorks.map((step, i) => (
           <Reveal key={step.title}>
-            <div className="relative h-full overflow-hidden rounded-3xl border border-border bg-surface p-7">
-              <span className="absolute -right-2 -top-3 text-7xl font-extrabold text-brand/10">{i + 1}</span>
+            <div className="relative h-full overflow-hidden rounded-3xl bg-brand p-7 text-white">
+              <span className="absolute -right-2 -top-3 text-7xl font-extrabold text-white/15">{i + 1}</span>
               <div className="relative">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand text-sm font-bold text-white">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-sm font-bold text-brand">
                   {i + 1}
                 </span>
                 <h3 className="mt-5 text-lg font-bold">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted">{step.description}</p>
+                <p className="mt-2 text-sm leading-relaxed text-white/85">{step.description}</p>
               </div>
             </div>
           </Reveal>
