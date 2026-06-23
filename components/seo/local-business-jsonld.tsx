@@ -6,9 +6,9 @@ export function LocalBusinessJsonLd() {
     "@type": "SecuritySystemService",
     name: "Total Alarme",
     description:
-      "Monitoramento de alarmes 24 horas, atendimento tático presencial e assistência técnica em Barra Velha e litoral norte de Santa Catarina.",
+      "Monitoramento de alarmes 24 horas, atendimento tático presencial e assistência técnica em Balneário Piçarras, Barra Velha e Penha, no litoral norte de Santa Catarina.",
     slogan: "Monitoramos. Protegemos. Cuidamos.",
-    image: `${siteConfig.siteUrl}/opengraph-image`,
+    image: `${siteConfig.siteUrl}/opengraph-image.png`,
     url: siteConfig.siteUrl,
     telephone: siteConfig.phone,
     email: siteConfig.email,

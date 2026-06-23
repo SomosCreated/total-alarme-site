@@ -17,19 +17,19 @@ const plusJakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   title: {
-    default: "Monitoramento de Alarmes 24h em Barra Velha | Total Alarme",
+    default: "Total Alarme | Monitoramento 24h em Balneário Piçarras, Barra Velha e Penha",
     template: "%s | Total Alarme",
   },
   description:
-    "Monitoramento de alarmes 24 horas, atendimento tático no local e assistência técnica própria em Barra Velha e litoral. Fale com a Total Alarme.",
+    "Monitoramento de alarmes 24 horas, atendimento tático presencial e assistência técnica em Balneário Piçarras, Barra Velha e Penha. Fale com a Total Alarme.",
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: siteConfig.siteUrl,
     siteName: "Total Alarme",
-    title: "Monitoramento de Alarmes 24h em Barra Velha | Total Alarme",
+    title: "Total Alarme | Monitoramento 24h em Balneário Piçarras, Barra Velha e Penha",
     description:
-      "Monitoramento de alarmes 24h, atendimento tático no local e assistência técnica própria em Barra Velha e litoral norte de SC.",
+      "Monitoramento de alarmes 24h, atendimento tático presencial e assistência técnica em Balneário Piçarras, Barra Velha e Penha.",
   },
   alternates: { canonical: siteConfig.siteUrl },
 };

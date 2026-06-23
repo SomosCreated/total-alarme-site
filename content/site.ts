@@ -23,7 +23,7 @@ export const hero = {
   badge: "Equipe com décadas de experiência",
   title: "Sua segurança merece presença quando realmente importa.",
   subtitle:
-    "Monitoramento de alarmes 24 horas, atendimento tático no local e assistência técnica própria em Barra Velha e litoral, por uma equipe que conhece a segurança da região há décadas.",
+    "Monitoramento de alarmes 24 horas, atendimento tático no local e assistência técnica própria em Balneário Piçarras, Barra Velha e Penha, por uma equipe que conhece a segurança da região há décadas.",
   chips: ["24 horas por dia", "Atendimento tático", "Assistência própria"],
 };
 
