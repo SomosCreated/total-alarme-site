@@ -14,7 +14,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md">
       <Container className="flex items-center justify-between py-3.5">
         <a href="#topo" aria-label="Início">
-          <Logo />
+          <Logo size={64} />
         </a>
         <div className="flex items-center gap-6 lg:gap-8">
           <nav className="hidden items-center gap-6 text-sm font-medium text-muted md:flex lg:gap-7">

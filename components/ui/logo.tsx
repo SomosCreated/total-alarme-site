@@ -11,7 +11,8 @@
  * A translate(-504, -151) transform brings it to origin.
  */
 
-export function Logo({ className = "" }: { className?: string }) {
+export function Logo({ className = "", size = 48 }: { className?: string; size?: number }) {
+  const height = Math.round((size * 254.92) / 244.71);
   return (
     <span
       className={`inline-flex items-center ${className}`}
@@ -19,8 +20,8 @@ export function Logo({ className = "" }: { className?: string }) {
     >
       <svg
         viewBox="0 0 244.71 254.92"
-        width="48"
-        height="50"
+        width={size}
+        height={height}
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
         style={{ display: "block", flexShrink: 0 }}
