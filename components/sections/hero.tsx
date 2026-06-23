@@ -1,5 +1,6 @@
-import { Clock, Motorbike, Wrench, Phone, ShieldCheck, Bell } from "lucide-react";
+import { Clock, Motorbike, Wrench, Phone, ShieldCheck, Bell, Menu, User, Lock, LockOpen, ChevronRight, type LucideIcon } from "lucide-react";
 import { Container } from "@/components/ui/container";
+import { Logo } from "@/components/ui/logo";
 import { WhatsAppButton } from "@/components/cta/whatsapp-button";
 import { BrandWatermark } from "@/components/ui/brand-motif";
 import { telHref } from "@/lib/links";
@@ -63,30 +64,80 @@ export function Hero() {
 
 function AppMockup() {
   return (
-    <div className="w-[230px] rounded-[2rem] border-[7px] border-[#1a1a20] bg-[#0e0e12] p-4 text-white shadow-2xl">
-      <div className="mx-auto mb-3 h-1.5 w-12 rounded-full bg-[#2a2a31]" />
-      <div className="mb-3 flex items-center justify-between">
-        <span className="text-sm font-bold">
-          total<span className="font-medium text-[#9aa0a6]"> alarme</span>
-        </span>
-        <Bell className="h-4 w-4 text-[#9aa0a6]" aria-hidden="true" />
+    <div className="w-[230px] overflow-hidden rounded-[2rem] border-[7px] border-[#1a1a20] bg-[#0e0e12] text-left shadow-2xl">
+      <div className="relative bg-[#eceef1]">
+        <div className="bg-gradient-to-b from-[#586272] to-[#333b46] px-3 pb-7 pt-3 text-white">
+          <div className="flex items-center justify-between">
+            <Menu className="h-[18px] w-[18px]" aria-hidden="true" />
+            <Logo size={38} />
+            <span className="relative">
+              <Bell className="h-[18px] w-[18px]" aria-hidden="true" />
+              <span className="absolute -right-2 -top-1.5 flex h-[15px] min-w-[15px] items-center justify-center rounded-full bg-[#e23b3b] px-0.5 text-[10px] font-bold leading-none">
+                2
+              </span>
+            </span>
+          </div>
+          <div className="mt-4 flex items-center gap-2.5">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#e7e9ed] text-[#7b828c]">
+              <User className="h-6 w-6" aria-hidden="true" />
+            </span>
+            <div className="min-w-0">
+              <p className="truncate text-[15px] font-bold leading-tight">Minha Casa</p>
+              <p className="mt-1 flex items-center gap-1.5 text-xs font-bold">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#2fd07a]" />
+                Sistema armado
+              </p>
+              <p className="mt-0.5 text-[11px] text-[#aeb4be]">Armado por João às 22:40</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative -mt-4 rounded-t-[18px] bg-[#eceef1] px-3.5 pb-4 pt-4">
+          <span className="absolute right-3 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-[#1aa86a] text-white shadow-md">
+            <Lock className="h-5 w-5" aria-hidden="true" />
+          </span>
+
+          <p className="text-[17px] font-bold text-[#2b2f36]">Ações</p>
+          <div className="mt-2.5 w-[100px] rounded-xl border border-[#e3e6ea] bg-white p-3">
+            <Wrench className="h-6 w-6 text-[#34b3a4]" aria-hidden="true" />
+            <p className="mt-2 text-xs text-[#6b7280]">Serviços</p>
+          </div>
+
+          <div className="mt-4 flex items-center justify-between">
+            <p className="text-[17px] font-bold text-[#2b2f36]">Atividades</p>
+            <span className="flex items-center gap-0.5 text-[11px] text-[#5e90c4]">
+              Ver todas <ChevronRight className="h-3 w-3" aria-hidden="true" />
+            </span>
+          </div>
+
+          <div className="my-3 flex items-center gap-2">
+            <span className="rounded-full border border-[#cfd3d9] px-3 py-0.5 text-[10px] text-[#6b7280]">HOJE</span>
+            <span className="h-px flex-1 bg-[#dde0e4]" />
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <ActivityRow color="#e0a93c" Icon={Lock} label="Armado: João" time="22:40" />
+            <ActivityRow color="#4cb3a0" Icon={LockOpen} label="Desarmado: João" time="18:05" />
+            <ActivityRow color="#e0a93c" Icon={Lock} label="Armado: Maria" time="07:30" />
+          </div>
+        </div>
       </div>
-      <div className="mb-2.5 rounded-2xl border border-[#26262e] bg-[#15151b] p-4 text-center">
-        <span className="mx-auto mb-2 flex h-11 w-11 items-center justify-center rounded-full bg-brand/15 text-brand">
-          <ShieldCheck className="h-5 w-5" aria-hidden="true" />
-        </span>
-        <p className="text-sm font-bold">Sistema armado</p>
-        <p className="mt-0.5 flex items-center justify-center gap-1.5 text-xs text-green-500">
-          <span className="h-1.5 w-1.5 rounded-full bg-green-500" /> Tudo protegido
-        </p>
-      </div>
-      <div className="mb-3 flex items-center gap-2 rounded-xl border border-brand/35 bg-brand/10 p-2.5">
-        <Motorbike className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
-        <span className="text-[11px] leading-tight">Disparo na Casa Centro. Equipe tática a caminho.</span>
-      </div>
-      <div className="flex gap-2">
-        <span className="flex-1 rounded-xl border border-[#33333c] py-2 text-center text-[11px] font-medium">Desarmar</span>
-        <span className="flex-1 rounded-xl bg-brand py-2 text-center text-[11px] font-medium">Armar</span>
+    </div>
+  );
+}
+
+function ActivityRow({ color, Icon, label, time }: { color: string; Icon: LucideIcon; label: string; time: string }) {
+  return (
+    <div className="flex items-center gap-2.5">
+      <span
+        className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-[1.5px]"
+        style={{ borderColor: color, color }}
+      >
+        <Icon className="h-[17px] w-[17px]" aria-hidden="true" />
+      </span>
+      <div>
+        <p className="text-xs text-[#2b2f36]">{label}</p>
+        <p className="text-[11px] text-[#9aa0a8]">{time}</p>
       </div>
     </div>
   );
