@@ -64,7 +64,7 @@ export function Hero() {
 
 function AppMockup() {
   return (
-    <div className="w-[230px] overflow-hidden rounded-[2rem] border-[7px] border-[#1a1a20] bg-[#0e0e12] text-left shadow-2xl">
+    <div className="w-[250px] overflow-hidden rounded-[2rem] border-[7px] border-[#1a1a20] bg-[#0e0e12] text-left shadow-2xl">
       <div className="relative bg-[#eceef1]">
         <div className="bg-gradient-to-b from-[#586272] to-[#333b46] px-3 pb-7 pt-3 text-white">
           <div className="flex items-center justify-between">
