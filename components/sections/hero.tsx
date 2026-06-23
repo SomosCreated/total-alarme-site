@@ -23,7 +23,7 @@ export function Hero() {
             <h1 className="text-balance text-4xl font-extrabold leading-[1.1] tracking-tight text-white md:text-5xl">
               {hero.title}
             </h1>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 md:text-lg">
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-white/90 md:text-base">
               {hero.subtitle}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
