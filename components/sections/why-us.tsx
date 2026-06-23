@@ -1,4 +1,4 @@
-import { Award, HeartHandshake, Bike, Wrench, Cpu, Users, type LucideIcon } from "lucide-react";
+import { Award, HeartHandshake, Motorbike, Wrench, Cpu, Users, type LucideIcon } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
@@ -6,7 +6,7 @@ import { BrandArcPattern } from "@/components/ui/brand-motif";
 import { whyUs } from "@/content/site";
 
 const icons: Record<string, LucideIcon> = {
-  award: Award, "heart-handshake": HeartHandshake, bike: Bike, wrench: Wrench, cpu: Cpu, users: Users,
+  award: Award, "heart-handshake": HeartHandshake, moto: Motorbike, wrench: Wrench, cpu: Cpu, users: Users,
 };
 
 export function WhyUs() {

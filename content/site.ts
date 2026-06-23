@@ -59,7 +59,7 @@ export const services: ServiceItem[] = [
     ],
   },
   {
-    icon: "bike",
+    icon: "moto",
     title: "Atendimento Tático Presencial",
     featured: true,
     description:
@@ -108,7 +108,7 @@ export const howItWorks: Step[] = [
 export const whyUs: Differentiator[] = [
   { icon: "award", title: "Experiência", description: "Profissionais com ampla vivência no mercado de monitoramento eletrônico." },
   { icon: "heart-handshake", title: "Atendimento próximo", description: "Transparente e baseado na confiança." },
-  { icon: "bike", title: "Atendimento tático", description: "Equipe preparada para agir quando necessário." },
+  { icon: "moto", title: "Atendimento tático", description: "Equipe preparada para agir quando necessário." },
   { icon: "wrench", title: "Assistência própria", description: "Suporte especializado para os sistemas instalados pela empresa." },
   { icon: "cpu", title: "Tecnologia confiável", description: "Equipamentos modernos e soluções eficientes." },
   { icon: "users", title: "Atendimento humanizado", description: "Você fala com pessoas que conhecem seu sistema e suas necessidades." },

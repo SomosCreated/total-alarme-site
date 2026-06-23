@@ -1,10 +1,10 @@
-import { Radar, Bike, Wrench, Smartphone, Check, type LucideIcon } from "lucide-react";
+import { Radar, Motorbike, Wrench, Smartphone, Check, type LucideIcon } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { Card } from "@/components/ui/card";
 import { Reveal } from "@/components/ui/reveal";
 import { services } from "@/content/site";
 
-const icons: Record<string, LucideIcon> = { radar: Radar, bike: Bike, wrench: Wrench, smartphone: Smartphone };
+const icons: Record<string, LucideIcon> = { radar: Radar, moto: Motorbike, wrench: Wrench, smartphone: Smartphone };
 
 export function Services() {
   return (

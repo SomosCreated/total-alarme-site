@@ -1,4 +1,4 @@
-import { Clock, Bike, Wrench, Phone, ShieldCheck, Bell } from "lucide-react";
+import { Clock, Motorbike, Wrench, Phone, ShieldCheck, Bell } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { WhatsAppButton } from "@/components/cta/whatsapp-button";
 import { BrandWatermark } from "@/components/ui/brand-motif";
@@ -6,7 +6,7 @@ import { telHref } from "@/lib/links";
 import { hero } from "@/content/site";
 import { siteConfig } from "@/lib/site-config";
 
-const chipIcons = [Clock, Bike, Wrench];
+const chipIcons = [Clock, Motorbike, Wrench];
 
 export function Hero() {
   return (
@@ -81,7 +81,7 @@ function AppMockup() {
         </p>
       </div>
       <div className="mb-3 flex items-center gap-2 rounded-xl border border-brand/35 bg-brand/10 p-2.5">
-        <Bike className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
+        <Motorbike className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
         <span className="text-[11px] leading-tight">Disparo na Casa Centro. Equipe tática a caminho.</span>
       </div>
       <div className="flex gap-2">
